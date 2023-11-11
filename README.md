@@ -6,7 +6,7 @@
 - Containers for visualizations with Font Awesome icons.
 - "Capture Visualization" button for image download.
 [Link](http://127.0.0.1:3000/Visualization/.html)
-[Visit My Web Page](https://Rachel2705.github.io/Interactiv_Biovisualization/)
+
 
 **JavaScript (app.js):**
 - Sample genetic sequence data.
