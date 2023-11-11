@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Biovisualization</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 10px;
+      text-align: center;
+      color: #ecf0f1;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    #visualization-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .visualization-section {
+      flex: 1;
+      margin: 20px;
+      padding: 20px;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .visualization-section:hover {
+      transform: scale(1.05);
+    }
+
+    #captureButton {
+      background-color: #3498db;
+      color: #ecf0f1;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    #captureButton:hover {
+      background-color: #2980b9;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- Add React and ReactDOM scripts -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <!-- Add Babel for JSX transpilation -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jsmol/jsmol.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Interactive Biovisualization</h1>
+  </header>
+
+  <nav>
+    <a href="#sequence">Genetic Sequence</a>
+    <a href="#3d">3D Model</a>
+    <a href="#data">Data Analysis</a>
+  </nav>
+
+  <div id="visualization-container">
+    <div id="sequence-visualization" class="visualization-section">
+      <h2>Genetic Sequence</h2>
+      <i class="fas fa-dna fa-3x"></i>
+      <!-- Your genetic sequence visualization code here -->
+    </div>
+
+    <div id="jsmolApplet" class="visualization-section">
+      <h2>3D Structure</h2>
+      <i class="fas fa-flask fa-3x"></i>
+      <!-- Your JSmol initialization code here -->
+    </div>
+
+    <div id="threejs-container" class="visualization-section">
+      <h2>3D Model</h2>
+      <i class="fas fa-cube fa-3x"></i>
+      <!-- Your three.js 3D model code here -->
+    </div>
+
+    <div id="data-analysis" class="visualization-section">
+      <h2>Data Analysis</h2>
+      <i class="fas fa-chart-bar fa-3x"></i>
+      <!-- Your data analysis chart code here -->
+    </div>
+  </div>
+
+  <button id="captureButton">Capture Visualization</button>
+
+  <script>
+    // Your existing D3.js, JSmol, and three.js initialization
+
+    // Add event listener to the capture button
+    document.getElementById('captureButton').addEventListener('click', captureVisualization);
+
+    // Function to capture the visualization
+    function captureVisualization() {
+      // Capture the HTML content (including three.js canvas) as an image
+      html2canvas(document.getElementById('visualization-container')).then(canvas => {
+        // Convert the canvas to a data URL
+        const dataURL = canvas.toDataURL();
+
+        // Create a link and trigger download
+        const a = document.createElement('a');
+        a.href = dataURL;
+        a.download = '3d_visualization.png';
+        a.click();
+      });
+    }
+  </script>
+</body>
+
+</html>
