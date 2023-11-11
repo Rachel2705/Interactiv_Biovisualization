@@ -6,10 +6,11 @@
 - Included containers for visualizations with Font Awesome icons.
 - Added a "Capture Visualization" button for image download.
 [Link](http://127.0.0.1:3000/Visualization/.html)
+![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/4.PNG)
 ![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/2.PNG)
 ![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/.PNG)
 ![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/3.PNG)
-![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/4.PNG)
+
 
 **JavaScript (app.js):**
 - Provided sample genetic sequence data.
