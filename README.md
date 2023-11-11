@@ -8,11 +8,8 @@
 [Link](http://127.0.0.1:3000/Visualization/.html)
 
 
-![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/1.PNG)
-
 
 ![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/2.PNG)
-
 
 
 **JavaScript (app.js):**
@@ -23,7 +20,7 @@
 - Added labels for each base.
 - Positioned elements dynamically based on the base index.
 - Ensured vertical alignment using "dominant-baseline."
-- ![image](https://github.com/Rachel2705/Interactiv_Biovisualization/blob/main/3.PNG)
+
 
 **Overall:**
 - Attempted to achieve an interactive biovisualization webpage.
