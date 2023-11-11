@@ -1,24 +1,23 @@
 # Interactiv_Biovisualization
 **HTML File:**
-- Creates a webpage for biovisualization.
-- Defines styling using CSS.
-- Navigation bar with links to Genetic Sequence, 3D Model, and Data Analysis.
-- Containers for visualizations with Font Awesome icons.
-- "Capture Visualization" button for image download.
+- Created a webpage for biovisualization.
+- Defined styling using CSS.
+- Added a navigation bar with links to Genetic Sequence, 3D Model, and Data Analysis.
+- Included containers for visualizations with Font Awesome icons.
+- Added a "Capture Visualization" button for image download.
 [Link](http://127.0.0.1:3000/Visualization/.html)
 
-
 **JavaScript (app.js):**
-- Sample genetic sequence data.
-- D3.js used for genetic sequence visualization.
-- SVG element dynamically sized.
-- Rectangles represent bases with customized colors.
-- Labels for each base.
-- Dynamic positioning based on base index.
-- "dominant-baseline" ensures vertical alignment.
+- Provided sample genetic sequence data.
+- Utilized D3.js for genetic sequence visualization.
+- Dynamically sized the SVG element.
+- Represented bases with rectangles having customized colors.
+- Added labels for each base.
+- Positioned elements dynamically based on the base index.
+- Ensured vertical alignment using "dominant-baseline."
 
 **Overall:**
-- Tried to achieve an interactive biovisualization webpage.
+- Attempted to achieve an interactive biovisualization webpage.
 - Implemented genetic sequence visualization using D3.js.
 - Used rectangles and labels to represent bases.
 - Applied customized colors based on the type of base.
