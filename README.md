@@ -6,7 +6,8 @@
 - Containers for visualizations with Font Awesome icons.
 - "Capture Visualization" button for image download.
 
-- ![Visulaization](![image](https://github.com/Rachel2705/Interactiv_Biovisualization/assets/136056290/30bbf8be-51f6-43f3-8b8c-63cd7ce85525)
+- ![Alt Text](http://127.0.0.1:3000/Visualization/.html)
+
 )
   ![Biovisualization Image](https://github.com/Rachel2705/interactiv_Biovisualization/raw/main/Downloads/.PNG)
 
