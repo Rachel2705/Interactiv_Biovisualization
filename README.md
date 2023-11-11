@@ -5,8 +5,8 @@
 - Navigation bar with links to Genetic Sequence, 3D Model, and Data Analysis.
 - Containers for visualizations with Font Awesome icons.
 - "Capture Visualization" button for image download.
+[Link Text](http://127.0.0.1:3000/Visualization/.html)
 
-- ![Alt Text](http://127.0.0.1:3000/Visualization/.html)
 
 )
   ![Biovisualization Image](https://github.com/Rachel2705/interactiv_Biovisualization/raw/main/Downloads/.PNG)
